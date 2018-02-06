@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="crystalsCollector">CrystalCollector!</h1>
+        </div>
+        <div class="infoIndex">
+            <p>
+                You will be given a random number at the start of the game.
+
+                There are four crystals below. By clicking on a crystal you
+                will add a specific amount of points to your total score.
+
+                You win the game by matching yhour total score to random
+                number, you lose the game if your total score goes above
+                the random number.
+
+                The values of each crystal is hidden from you until you 
+                click on it.
+
+                Each time when the game starts, the game will change the
+                value of each crystal.
+            </p>
+        </div>
+        <div class="statsIndex">
+            <div class="currentNumber">
+                <div class="currentNumberBox">
+                    <h2 id="randomNumber">" "</h2>
+                </div>
+
+            </div>
+            <div class="winLoss">
+                <section id="wins">
+                    <h3>Wins: + " "</h3>
+                </section>
+                <section id="losses">
+                    <h3>Losses: + " "</h3>
+                </section>
+            </div>
+
+        </div>
+        <div class="crystalsIndex">
+                <section id="redCrystal">
+                        <img id="red" src="assets/images/red.png" />
+               </section>
+               <section id="blueCrystal">
+                    <img id="red" src="assets/images/blue.png" />
+               </section>
+               <section id="greenCrystal">
+                    <img id="red" src="assets/images/green.png" />
+               </section>
+               <section id="purpleCrystal">
+                    <img id="red" src="assets/images/purple.jpg" />
+               </section>  
+            </div>
+            <div class="playerScore">
+
+            </div>
+    </div>
+    
+</body>
+</html>
