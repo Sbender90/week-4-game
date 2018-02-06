@@ -1,6 +1,44 @@
+body {
+    width: 100%;
+}
 
+
+.header {
+    border: 2px solid #f07008;
+    background-color: #f07008;
+    width: fit-content;
+
+}
+
+.infoIndex {
+    background-color: #fff09d;
+    margin: 15px;
+    width: 25%;
+    
+   
+}
+
+#randomNumber {
+    height: 100px;
+    width: 15%;
+    background-color: #0cee90;
+}
+
+.winLoss {
+    height: 50px;
+    width: 5%;
+    background-color: #00d6d6;
+    
+}
+
+#crystalsIndex img{
+    display: inline-block;
+
+}
 
 img {
     height: 100px;
     width: 100px;
+    
+
 }
