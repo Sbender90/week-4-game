@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    background-image: url(assets/images/cave.jpg)
 }
 
 
@@ -18,24 +19,40 @@ body {
    
 }
 
-#randomNumber {
+.currentNumberBox {
     height: 100px;
-    width: 15%;
+    width: 100%;
     background-color: #0cee90;
+    margin-right: 15px;
 }
 
 .winLoss {
     height: 50px;
     width: 5%;
     background-color: #00d6d6;
-    
+    margin-left: 15px;
+    padding: 10px;
 }
 
-#crystalsIndex img{
-    display: inline-block;
+li {
+    list-style-type: none;
+}
+
+.playerScore {
+    background-color: #0cee90;
+    padding: 5px;
+    margin-top: 2%;
+    width: 15%;
 
 }
 
+h3 {
+    margin: 0;
+}
+
+.statsIndex {
+    display: flex;
+}
 img {
     height: 100px;
     width: 100px;
