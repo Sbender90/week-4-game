@@ -5,6 +5,11 @@ body {
     background-size: 100%;
  
 }
+/* need work here */
+div, #1, #2, #3, #4 {
+    display: inline;
+    padding: 10px;
+}
 
 
 .header {

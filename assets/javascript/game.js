@@ -8,7 +8,13 @@ $(document).ready(function(){
         imageCrystal.addClass('crystal-images');
         imageCrystal.attr('src' , "assets/images/crystalFolder") ; 
         imageCrystal.attr('data-crystalvalue', numberOptions[i]);
-        $("#crystals").append(imageCrystal);
+        $('div').each( function(i) {
+
+        // this is not working properly not loading even placeholder images
+        // look at the syntax errors on this page also
+        
+            $(this).append("<img src='assets/images" +(++i)+".png' width='79'' height='79' />");
+        
     }
     
     
