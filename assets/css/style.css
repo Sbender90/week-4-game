@@ -1,5 +1,14 @@
 body {
     width: 100%;
+    /* background-image: url(../../assets/images/cave.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+/* need work here */
+div, #1, #2, #3, #4 {
+    display: inline;
+    padding: 10px;
 }
 
 
@@ -29,26 +38,55 @@ body {
     
 }
 
-#randomNumber {
+.currentNumberBox {
     height: 100px;
-    width: 15%;
+    width: 110%;
     background-color: #0cee90;
+<<<<<<< HEAD
     
+=======
+    margin-right: 15px;
+>>>>>>> 55d89d8711f53d1bd37d8f99b0b0509d062bcf69
 }
 
 .winLoss {
     height: 50px;
     width: 5%;
     background-color: #00d6d6;
+<<<<<<< HEAD
     
     
+=======
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
-#crystalsIndex img{
-    display: inline-block;
+li {
+    list-style-type: none;
+}
+
+.crystals {
+    height: 125px;
+    width: 125px;
+>>>>>>> 55d89d8711f53d1bd37d8f99b0b0509d062bcf69
+}
+
+.playerScore {
+    background-color: #0cee90;
+    padding: 5px;
+    margin-top: 2%;
+    width: 15%;
 
 }
 
+h3 {
+    margin: 0;
+}
+
+.statsIndex {
+    display: flex;
+}
 img {
     height: 100px;
     width: 100px;
