@@ -1,21 +1,44 @@
-$(document).ready(function(){
+(function(){
 
+    var ArrayofImages = [
+        "<img src='.assets/images/1.png' 'class='img-fluid'/>",
+        "<img src='.assets/images/2.png' 'class='img-fluid'/>",
+        "<img src='.assets/images/3.png' 'class='img-fluid'/>",
+        "<img src='.assets/images/4.png' 'class='img-fluid'/>"
+ ]
+
+
+    var crystalBtn = $('<button>');
     var targetNumber = [];
     var numberOptions = [10, 5, 3, 7];
 
-    for (var i = 0; i < numberOptions.length; i++) {
-        var imageCrystal = $('<img>');
-        imageCrystal.addClass('crystal-images');
-        imageCrystal.attr('src' , "assets/images/crystalFolder") ; 
-        imageCrystal.attr('data-crystalvalue', numberOptions[i]);
-        $('div').each( function(i) {
+    var randomNumber = Math.floor(Math.random() * (89 - 4)) + 5;
+    console.log(randomNumber);
 
-        // this is not working properly not loading even placeholder images
-        // look at the syntax errors on this page also
+
+    crystalBtn.attr('data-img', [i]);
+
+    function initilizeCrystals(){
+        $("#numberGenerated").push(randomNumber);
+    };
+
+    for (var i = 0; i < ArrayofImages.length; i++) {
+        $('.crystals').append(i);
+    };  
+    //assign crystals a value
+        //make crystal images buttons
+
+    //make math functions to allow clicked numbers to be added
+    //to try and match the random number
+    
+    //set win/loss condition
+
+    //reset game
+
         
-            $(this).append("<img src='assets/images" +(++i)+".png' width='79'' height='79' />");
-        
-    }
+   
     
     
-    });
+   
+
+})();
