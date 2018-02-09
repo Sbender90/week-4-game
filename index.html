@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script> -->
     <title>Crystal Collector</title>
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="header">
             <h1 class="crystalsCollector">CrystalCollector!</h1>
         </div>
@@ -35,21 +35,19 @@
                 value of each crystal.
             </p>
         </div>
-        <div class="statsIndex">
-            <div class="currentNumber">
-                <div class="currentNumberBox">
-                    <h2 id="randomNumber">" "</h2>
-                </div>
-
-            </div>
+        <ul class="statsIndex">
             
-        <ul class="winLoss">
-            <li class="wins">Wins: + " "</li>
-            <li class="losses">Losses + " "</li>
-        </ul>
+                <!-- <ul class="currentNumberBox"> -->
+                    <li id="randomNumber">" "</li>
+                    <!-- </ul> -->
+            
+                 <ul class="winLoss">
+                <li class="wins">Wins: + " "</li>
+                <li class="losses">Losses + " "</li>
+               </ul>
             
 
-        </div>
+            </ul>
         <div class="crystalsIndex">
                 <section id="redCrystal">
                         <img id="red" src="assets/images/red.png" />
@@ -73,7 +71,8 @@
                 </div>
 
             </div>
-    </div>
-    
+    <!-- </div> -->
+    <link rel="stylesheet" type="text/javascript" media="screen" href="assets/javascript/game.js" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

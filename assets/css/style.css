@@ -7,27 +7,40 @@ body {
     border: 2px solid #f07008;
     background-color: #f07008;
     width: fit-content;
+    margin-bottom: 15px;
+    position: static;
 
 }
 
 .infoIndex {
     background-color: #fff09d;
-    margin: 15px;
+    padding: 10px;
     width: 25%;
+    position: absolute;
+}
+
+.statsIndex {
+    margin-top: 355px;
+    display: block;
+}
+
+.li {
+    float: left;
     
-   
 }
 
 #randomNumber {
     height: 100px;
     width: 15%;
     background-color: #0cee90;
+    
 }
 
 .winLoss {
     height: 50px;
     width: 5%;
     background-color: #00d6d6;
+    
     
 }
 
