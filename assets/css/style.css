@@ -38,25 +38,17 @@ div, #1, #2, #3, #4 {
     
 }
 
-.currentNumberBox {
+.currentNumber {
     height: 100px;
-    width: 110%;
+    width: 15%;
     background-color: #0cee90;
-<<<<<<< HEAD
-    
-=======
     margin-right: 15px;
->>>>>>> 55d89d8711f53d1bd37d8f99b0b0509d062bcf69
 }
 
 .winLoss {
     height: 50px;
     width: 5%;
     background-color: #00d6d6;
-<<<<<<< HEAD
-    
-    
-=======
     margin-left: 50px;
     margin-top: 20px;
     padding: 10px;
@@ -69,7 +61,6 @@ li {
 .crystals {
     height: 125px;
     width: 125px;
->>>>>>> 55d89d8711f53d1bd37d8f99b0b0509d062bcf69
 }
 
 .playerScore {
