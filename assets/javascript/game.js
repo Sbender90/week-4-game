@@ -1,55 +1,65 @@
 (function(){
 
-    var arrayofImages = [
-        "<img src='.assets/images/1.png' 'class='img-fluid'/>",
-        "<img src='.assets/images/2.png' 'class='img-fluid'/>",
-        "<img src='.assets/images/3.png' 'class='img-fluid'/>",
-        "<img src='.assets/images/4.png' 'class='img-fluid'/>"
- ]
-
-    
-    var crystalBtn = $('<button>');
-    var numberOptions = [10, 5, 3, 7];
+    var numberOptions = [10, 5, 1, 7];
     var counter = 0;
     var randomNumber = Math.floor(Math.random() * (89 - 4)) + 5;
     console.log(randomNumber);
+    var wins = 0;
+    var losses = 0;
+    var winValue = 1;
+    var lossValue = 1;
+    var randomNumber = Math.floor(Math.random() * (89 - 4)) + 5;
 
 
-    // crystalBtn.attr('data-img', [i]);
-
-    function initilizeCrystals(){
+    function initializeGems() {
+        wins = wins;
+        losses = losses;
         
-        $("#randomNumber").text(liveNumber);
-        for (var i = 0; i < numberOptions.length; i++) {
+    };
+
+    for (var i = 0; i < numberOptions.length; i++) {
+            $("#randomNumber").text(randomNumber);
+            
             // $('.crystals').append(i);
             var imageCrystal = $("<img>");
             imageCrystal.addClass("crystal-image");
-            imageCrystal.attr("src", "../week-4-game/assets/images/1.png");
+
+            
+            imageCrystal.attr("src", "assets/images/1.png");
+
             imageCrystal.attr("data-crystalvalue", numberOptions[i]);
             $("#crystals").append(imageCrystal);
         };  
-    };
-
- 
-
-
-    $(".crystal-image").on("click", function() {
+        
+        $(".crystal-image").on("click", function() {
 
        
         
         var crystalValue = ($(this).attr("data-crystalvalue"));
         crystalValue = parseInt(crystalValue);
-       
-        counter += crystalValue;
         
+        console.log(crystalValue);
+        counter += crystalValue;
+            
+        console.log("--------------");
+        console.log(counter);
+        $("#playerScore").html(counter);
         if (counter === randomNumber) {
-          alert("You win!");
+            wins += winValue;
+            $("#wins").html(wins);
+            initializeGems();
+           
+            
         }
     
         else if (counter >= randomNumber) {
-          alert("You lose!!");
+            losses += lossValue;
+            $("#losses").html(losses);
+            initializeGems();
+            
+            
         }
-    
+        
       });
     //assign crystals a value
         //make crystal images buttons

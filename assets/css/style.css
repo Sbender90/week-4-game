@@ -61,6 +61,10 @@ li {
 .crystals {
     height: 125px;
     width: 125px;
+    display: inline-block;
+    margin: 5px;
+    
+
 }
 
 .playerScore {

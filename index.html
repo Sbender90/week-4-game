@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script> -->
     <title>Crystal Collector</title>
 </head>
 <body>
@@ -37,9 +40,9 @@
         </div>
         <div class="statsIndex">
             <div class="currentNumber">
-                    <h2 id="liveNumber"></h2>
+                    <h2 id="liveNumber">Number to match: <span id="randomNumber"></span></h2>
                
-                    <section id="randomNumber"></section>
+                    
             </div>
             
                 
@@ -47,22 +50,20 @@
                     
             
                  <ul class="winLoss">
-                <li class="wins">Wins: + " "</li>
-                <li class="losses">Losses + " "</li>
+                <li class="wins">Wins: <span id="wins"></span></li>
+                <li class="losses">Losses: <span id="losses"></span></li>
                </ul>
             
 
         </div>
-       <div class="crystals">
+       <div id="crystals">
            
        </div>
             <div class="playerScore">
                 <section id="currentScore">
-                    <h3>Your Score is:</h3>
+                    <h3>Your Score is:<span id="playerScore"></span></h3>
                 </section>
-                <div class="scoreDisplay">
-                    <section id="number">" "</section>
-                </div>
+               
 
             </div>
     </div>
