@@ -8,12 +8,13 @@
     var losses = 0;
     var winValue = 1;
     var lossValue = 1;
-    var randomNumber = Math.floor(Math.random() * (89 - 4)) + 5;
+    
 
 
     function initializeGems() {
         wins = wins;
         losses = losses;
+        var randomNumber = Math.floor(Math.random() * (89 - 4)) + 5;
         
     };
 
